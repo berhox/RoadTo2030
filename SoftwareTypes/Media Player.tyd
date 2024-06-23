@@ -1,0 +1,118 @@
+SoftwareType
+    {
+        Name    "Media Player"
+        Description    "A versatile and powerful media player designed to play various audio and video formats, ensuring an immersive entertainment experience."
+        Random    0.3
+        OsSupport    true
+        Popularity    0.8
+        Retention    36
+        IdealPrice    40
+        OptimalDevTime    30
+        SubmarketNames    ["Audio Quality"; "Video Quality"; "User Interface"]
+        Iterative    0.7
+        NameGenerator    media_player_names.txt
+        Features    [
+            {
+                Name    High-Definition Video Playback
+                Spec    Video
+                Description    "Supports playback of high-definition video formats, providing crystal-clear visuals and a superior viewing experience."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [4; 5; 3]
+                Features    [
+                    {
+                        Name    "4K Support"
+                        Level    2
+                        Description    "Enables playback of videos in 4K resolution, offering the highest level of visual clarity and detail."
+                        DevTime    10
+                        CodeArt    0.7
+                        Submarkets    [5; 5; 2]
+                    }
+                    {
+                        Name    "HDR Support"
+                        Level    2
+                        Description    "Supports High Dynamic Range (HDR) videos, enhancing color contrast and brightness for a more realistic viewing experience."
+                        DevTime    8
+                        CodeArt    0.5
+                        Submarkets    [4; 6; 2]
+                    }
+                    {
+                        Name    "Smooth Playback"
+                        Level    1
+                        Description    "Ensures smooth and uninterrupted playback of high-definition videos without buffering."
+                        DevTime    6
+                        CodeArt    0.4
+                        Submarkets    [3; 4; 5]
+                    }
+                ]
+            }
+            {
+                Name    Surround Sound Audio
+                Spec    Audio
+                Description    "Provides support for surround sound audio formats, delivering a rich and immersive audio experience."
+                DevTime    7
+                CodeArt    0.5
+                Submarkets    [5; 3; 4]
+                Features    [
+                    {
+                        Name    "Dolby Atmos Support"
+                        Level    2
+                        Description    "Enables playback of Dolby Atmos audio, creating a multidimensional sound experience that flows around the listener."
+                        DevTime    9
+                        CodeArt    0.6
+                        Submarkets    [6; 2; 4]
+                    }
+                    {
+                        Name    "Equalizer"
+                        Level    1
+                        Description    "Includes an equalizer with presets and manual controls to fine-tune the audio output for various genres and preferences."
+                        DevTime    5
+                        CodeArt    0.4
+                        Submarkets    [4; 3; 5]
+                    }
+                    {
+                        Name    "3D Audio Support"
+                        Level    2
+                        Description    "Supports 3D audio formats, enhancing spatial sound effects for a more realistic audio experience."
+                        DevTime    7
+                        CodeArt    0.5
+                        Submarkets    [5; 3; 4]
+                    }
+                ]
+            }
+            {
+                Name    User-Friendly Interface
+                Spec    User Interface
+                Description    "A sleek and intuitive user interface designed to provide easy navigation and control over media playback features."
+                DevTime    6
+                CodeArt    0.3
+                Submarkets    [3; 4; 5]
+                Features    [
+                    {
+                        Name    "Customizable Skins"
+                        Level    1
+                        Description    "Allows users to customize the player’s appearance with different skins and themes."
+                        DevTime    4
+                        CodeArt    0.2
+                        Submarkets    [2; 3; 7]
+                    }
+                    {
+                        Name    "Keyboard Shortcuts"
+                        Level    1
+                        Description    "Supports customizable keyboard shortcuts for quick access to various functions and controls."
+                        DevTime    3
+                        CodeArt    0.3
+                        Submarkets    [2; 3; 7]
+                    }
+                    {
+                        Name    "Drag-and-Drop Playlist"
+                        Level    1
+                        Description    "Enables users to easily create and manage playlists by dragging and dropping files."
+                        DevTime    4
+                        CodeArt    0.2
+                        Submarkets    [2; 4; 6]
+                    }
+                ]
+            }
+        ]
+    }
