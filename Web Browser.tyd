@@ -1,0 +1,111 @@
+SoftwareType
+	{
+	Name			"Web Browser"
+	Category		Internet
+	Description		"A modern and secure web browser designed for fast, efficient, and safe internet browsing."
+	Random			0.2
+	IdealPrice		20
+	OptimalDevTime		18
+	OSSupport		true
+	OneClient		False
+	InHouse			False
+	SubmarketNames		[ "Performance"; "Security"; "User Experience" ]
+    NameGenerator    web_browser_names.txt
+	Categories
+		[
+			{
+			Name			"Mainstream Browsing"
+			Description		"This category focuses on general web browsing capabilities with a balance of performance, security, and user experience."
+			Popularity		0.8
+			Submarkets		[ 4; 3; 3 ] #40%, 30%, 30%
+			Retention		36
+			TimeScale		1
+			Iterative		0.6
+			NameGenerator		browsergen
+			}
+		]
+	Features
+		[
+			{
+			Name 		"HTML5 Support"
+			Spec		System
+			Description	"Ensures compatibility with modern web standards, allowing the browser to properly render HTML5 content."
+			DevTime		5
+			CodeArt		0.8
+			Submarkets	[ 3; 2; 5 ] #30%, 20%, 50%
+			Features
+				[
+					{
+					Name		"Canvas API"
+					Description	"Supports the HTML5 Canvas API for dynamic and interactive graphics rendering."
+					DevTime		4
+					Level		2
+					CodeArt		0.6
+					Submarkets	[ 3; 1; 6 ]
+					}
+					{
+					Name		"Web Storage"
+					Description	"Provides local storage capabilities for web applications, allowing them to store data persistently."
+					DevTime		3
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 2; 3; 5 ]
+					}
+				]
+			}
+			{
+			Name 		"Security Features"
+			Spec		Security
+			Description	"Includes advanced security features to protect users from malware, phishing, and other online threats."
+			DevTime		6
+			CodeArt		0.7
+			Submarkets	[ 2; 5; 3 ] #20%, 50%, 30%
+			Features
+				[
+					{
+					Name		"Anti-Phishing"
+					Description	"Detects and blocks phishing attempts, protecting users' personal information from fraud."
+					DevTime		4
+					Level		1
+					CodeArt		0.6
+					Submarkets	[ 1; 6; 3 ]
+					}
+					{
+					Name		"Sandboxing"
+					Description	"Isolates web processes to prevent malware from affecting the user's system."
+					DevTime		5
+					Level		2
+					CodeArt		0.7
+					Submarkets	[ 2; 7; 1 ]
+					}
+				]
+			}
+			{
+			Name 		"User Interface Enhancements"
+			Spec		User Interface
+			Description	"Improves the browser's usability with a clean and intuitive interface."
+			DevTime		5
+			CodeArt		0.4
+			Submarkets	[ 2; 2; 6 ] #20%, 20%, 60%
+			Features
+				[
+					{
+					Name		"Dark Mode"
+					Description	"Allows users to switch to a dark-themed interface for comfortable browsing in low-light environments."
+					DevTime		3
+					Level		1
+					CodeArt		0.3
+					Submarkets	[ 1; 2; 7 ]
+					}
+					{
+					Name		"Customizable Toolbar"
+					Description	"Enables users to customize the toolbar with their preferred shortcuts and tools."
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 2; 1; 7 ]
+					}
+				]
+			}
+		]
+	}
