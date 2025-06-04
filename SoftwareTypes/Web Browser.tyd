@@ -105,7 +105,42 @@ SoftwareType
 					CodeArt		0.5
 					Submarkets	[ 2; 1; 7 ]
 					}
-				]
-			}
-		]
-	}
+                                ]
+                        }
+                        {
+                        Name            "Extensions Framework"
+                        Spec            System
+                        Description     "Provides support for browser extensions to customize functionality."
+                        DevTime         7
+                        CodeArt         0.6
+                        Submarkets      [ 3; 2; 5 ]
+                        Features
+                                [
+                                        {
+                                        Name            "Ad Blocker"
+                                        Description     "Allows installation of extensions that block intrusive ads."
+                                        DevTime         4
+                                        Level           1
+                                        CodeArt         0.5
+                                        Submarkets      [ 2; 3; 6 ]
+                                        }
+                                        {
+                                        Name            "Password Manager"
+                                        Description     "Integrates a secure password manager extension for saving credentials."
+                                        DevTime         5
+                                        Level           2
+                                        CodeArt         0.7
+                                        Submarkets      [ 3; 5; 2 ]
+                                        }
+                                ]
+                        }
+                        {
+                        Name            "Cross-Device Sync"
+                        Spec            Network
+                        Description     "Synchronizes bookmarks and settings across multiple devices."
+                        DevTime         6
+                        CodeArt         0.5
+                        Submarkets      [ 3; 4; 3 ]
+                        }
+                ]
+        }
