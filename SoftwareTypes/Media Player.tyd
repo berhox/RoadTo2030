@@ -114,5 +114,39 @@ SoftwareType
                     }
                 ]
             }
+            {
+                Name    "Streaming Service Integration"
+                Spec    Network
+                Description    "Integrates popular streaming services, enabling playback of online media directly within the player."
+                DevTime    9
+                CodeArt    0.6
+                Submarkets    [4; 5; 3]
+                Features    [
+                    {
+                        Name    "Online Radio Support"
+                        Level    1
+                        Description    "Allows listening to online radio stations through the media player."
+                        DevTime    4
+                        CodeArt    0.3
+                        Submarkets    [3; 4; 5]
+                    }
+                    {
+                        Name    "Podcast Manager"
+                        Level    1
+                        Description    "Provides tools to subscribe, download, and manage podcasts."
+                        DevTime    5
+                        CodeArt    0.4
+                        Submarkets    [4; 3; 5]
+                    }
+                    {
+                        Name    "Cloud Library Sync"
+                        Level    2
+                        Description    "Syncs user media libraries across devices using cloud storage."
+                        DevTime    6
+                        CodeArt    0.5
+                        Submarkets    [5; 4; 3]
+                    }
+                ]
+            }
         ]
     }
