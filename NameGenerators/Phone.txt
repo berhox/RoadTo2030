@@ -1,0 +1,33 @@
+-start(base,baseConnect)
+-base(base2Connect,base2)
+Mobile
+Smart
+Pocket
+-baseConnect(base2Connect)
+A-
+E-
+G-
+I-
+J-
+M-
+O-
+V-
+X-
+Y-
+Z-
+g
+i
+x
+z
+-base2Connect(base2,stop,stop)
+Phone
+Touch
+Home
+Net
+Ring
+Call
+Tone
+-base2(stop)
+ Connect
+ Online
+ Wireless

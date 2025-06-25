@@ -1,0 +1,34 @@
+-start(base,base,baseConnect)
+-base(base2Connect,base2)
+Go
+Game
+Hyper
+Play
+Pluto
+Saturn
+Mars
+-baseConnect(base2Connect)
+A-
+E-
+G-
+I-
+J-
+M-
+O-
+V-
+X-
+Y-
+Z-
+g
+i
+x
+z
+-base2Connect(base2,stop,stop)
+Box
+Station
+Friend
+Unit
+Boy
+-base2(stop)
+ Base
+ Connect

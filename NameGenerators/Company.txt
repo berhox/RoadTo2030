@@ -1,0 +1,38 @@
+-start(base,base2)
+-base2(base3)
+Prime
+Spark
+Shark
+Brain
+Cool
+Macro
+Electro
+Space
+Win
+One
+Tri
+Bad
+Semi
+Skip
+-base(smallsecond,largesecond,ext)
+/Word
+-base3(largesecond,ext)
+/Word
+-smallsecond(ext,largesecond,stop)
+Ware
+Soft
+Net
+Biz
+Shop
+-largesecond(stop)
+ Digital
+ Interactive
+-ext(stop)
+ Inc.
+ Corp.
+ Ltd.
+ LLC
+ Studios
+ Studio
+ Industries
+ Productions

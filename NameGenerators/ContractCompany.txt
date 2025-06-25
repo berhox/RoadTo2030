@@ -1,0 +1,51 @@
+-start(pre,base,base,base)
+-pre(base)
+Mc
+The 
+-base(smallsecond,smallsecond,smallsecond,largesecond,largesecond,ext)
+Chicken
+Pit
+Cow
+Sheep
+Car
+Street
+City
+King
+Queen
+Chip
+Back
+Flute
+Owl
+-smallsecond(ext,largesecond,stop,stop)
+Fudge
+Dump
+Pack
+Stamp
+Town
+Gas
+Tune
+Switch
+Kids
+Night
+Patch
+Meat
+Beat
+Deli
+Shop
+Plus
+-largesecond(ext,stop)
+ Sausage
+ Carrot
+ Stop
+ and Eat
+ To Go
+ Farms
+ Electric
+ Delights
+ Beds
+ Deluxe
+ Dinner
+-ext(stop)
+ Inc.
+ Corp.
+ Ltd.

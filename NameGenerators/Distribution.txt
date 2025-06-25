@@ -1,0 +1,17 @@
+-start(base,smallsecond)
+-base(smallsecond,largesecond)
+Super
+Extra
+Mega
+Tech
+App
+Web
+-smallsecond(largesecond,stop)
+Play
+Stop
+Point
+Ware
+-largesecond(stop)
+ Store
+ Market
+ Shop

@@ -1,0 +1,25 @@
+-start(base,base2,base2)
+-base(base2,base3)
+Super
+Dual
+3D
+Power
+Rumble
+Split
+-base2(base3)
+Axis
+Finger
+Hand
+Pro
+Move
+Shock
+Analog
+Odyssey
+Grab
+Touch
+XTreme
+-base3(stop)
+ Controller
+ Joystick
+ Pad
+ Remote
