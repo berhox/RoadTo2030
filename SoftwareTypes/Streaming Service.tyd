@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Streaming Service"
+        Category    Internet
+        Description    "Online platform for streaming music, movies, and TV shows."
+        Random    0.2
+        OSSupport    true
+        IdealPrice    10
+        OptimalDevTime    36
+        SubmarketNames    ["Content"; "Performance"; "User Experience"]
+        NameGenerator    streaming_service_names.txt
+        Features    [
+            {
+                Name    Content Library
+                Spec    Data
+                Description    "Curated collection of audio and video content."
+                DevTime    7
+                CodeArt    0.5
+                Submarkets    [5; 3; 2]
+                Features    [
+                    {
+                        Name    "Recommendations"
+                        Level    1
+                        Description    "Personalized content suggestions."
+                        DevTime    4
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Offline Mode"
+                        Level    2
+                        Description    "Allows temporary downloads for offline viewing."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [5; 3; 2]
+                    }
+                ]
+            }
+            {
+                Name    Streaming Quality
+                Spec    Network
+                Description    "Adaptive streaming for different connection speeds."
+                DevTime    6
+                CodeArt    0.6
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "HD Support"
+                        Level    1
+                        Description    "High-definition video playback."
+                        DevTime    4
+                        CodeArt    0.5
+                        Submarkets    [4; 4; 2]
+                    }
+                    {
+                        Name    "4K Support"
+                        Level    2
+                        Description    "Ultra high-definition streaming for supported content."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Subscription System
+                Spec    System
+                Description    "Manage user subscriptions and payment plans."
+                DevTime    5
+                CodeArt    0.4
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Family Plans"
+                        Level    1
+                        Description    "Multiple profiles under one subscription."
+                        DevTime    4
+                        CodeArt    0.4
+                        Submarkets    [3; 3; 4]
+                    }
+                    {
+                        Name    "Gift Cards"
+                        Level    2
+                        Description    "Support redeemable codes for gift subscriptions."
+                        DevTime    3
+                        CodeArt    0.3
+                        Submarkets    [2; 3; 5]
+                    }
+                ]
+            }
+        ]
+    }

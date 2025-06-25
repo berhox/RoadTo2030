@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Benchmark Software"
+        Category    Utility
+        Description    "Measures hardware performance to compare systems."
+        Random    0.3
+        OSSupport    true
+        IdealPrice    40
+        OptimalDevTime    22
+        SubmarketNames    ["Accuracy"; "Performance"; "Usability"]
+        NameGenerator    benchmark_names.txt
+        Features    [
+            {
+                Name    CPU Tests
+                Spec    System
+                Description    "Stress the processor and report benchmark scores."
+                DevTime    6
+                CodeArt    0.6
+                Submarkets    [5; 4; 1]
+                Features    [
+                    {
+                        Name    "Multi-Core Support"
+                        Level    2
+                        Description    "Tests performance across multiple cores."
+                        DevTime    5
+                        CodeArt    0.7
+                        Submarkets    [6; 3; 1]
+                    }
+                    {
+                        Name    "Thermal Monitoring"
+                        Level    1
+                        Description    "Records CPU temperature during tests."
+                        DevTime    4
+                        CodeArt    0.5
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    GPU Tests
+                Spec    System
+                Description    "Graphics benchmarks for measuring rendering power."
+                DevTime    7
+                CodeArt    0.6
+                Submarkets    [5; 4; 1]
+                Features    [
+                    {
+                        Name    "Ray Tracing"
+                        Level    2
+                        Description    "Advanced graphics test for ray tracing capabilities."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [6; 3; 1]
+                    }
+                    {
+                        Name    "Frame Rate Test"
+                        Level    1
+                        Description    "Measures average frames per second."
+                        DevTime    4
+                        CodeArt    0.5
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Result Sharing
+                Spec    User Interface
+                Description    "Share benchmark results with friends online."
+                DevTime    4
+                CodeArt    0.4
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Online Leaderboards"
+                        Level    1
+                        Description    "Upload scores to global rankings."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [3; 3; 4]
+                    }
+                    {
+                        Name    "Export Reports"
+                        Level    2
+                        Description    "Generate detailed performance reports in various formats."
+                        DevTime    2
+                        CodeArt    0.4
+                        Submarkets    [2; 3; 5]
+                    }
+                ]
+            }
+        ]
+    }

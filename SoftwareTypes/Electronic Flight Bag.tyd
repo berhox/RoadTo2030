@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Electronic Flight Bag"
+        Category    Utility
+        Description    "Digital toolkit to aid flight crews with planning and navigation."
+        Random    0.2
+        OSSupport    true
+        IdealPrice    200
+        OptimalDevTime    32
+        SubmarketNames    ["Navigation"; "Performance"; "Usability"]
+        NameGenerator    efb_names.txt
+        Features    [
+            {
+                Name    Flight Planning
+                Spec    System
+                Description    "Create and manage flight plans with up-to-date data."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [5; 3; 2]
+                Features    [
+                    {
+                        Name    "Fuel Calculation"
+                        Level    2
+                        Description    "Estimate fuel requirements based on route and weather."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [5; 3; 2]
+                    }
+                    {
+                        Name    "Route Optimization"
+                        Level    1
+                        Description    "Suggest the most efficient flight path."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 4; 2]
+                    }
+                ]
+            }
+            {
+                Name    Navigation Charts
+                Spec    Data
+                Description    "Digital charts for approach, departure, and en route navigation."
+                DevTime    7
+                CodeArt    0.5
+                Submarkets    [4; 5; 1]
+                Features    [
+                    {
+                        Name    "Automatic Updates"
+                        Level    1
+                        Description    "Keep charts current with regular data cycles."
+                        DevTime    4
+                        CodeArt    0.4
+                        Submarkets    [4; 5; 1]
+                    }
+                    {
+                        Name    "Night Mode"
+                        Level    2
+                        Description    "Dark theme for low-light cockpit use."
+                        DevTime    3
+                        CodeArt    0.3
+                        Submarkets    [3; 4; 3]
+                    }
+                ]
+            }
+            {
+                Name    Weather Integration
+                Spec    Network
+                Description    "Real-time weather overlays and briefings."
+                DevTime    6
+                CodeArt    0.5
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "METAR/TAF Downloads"
+                        Level    1
+                        Description    "Retrieve latest airport weather reports."
+                        DevTime    4
+                        CodeArt    0.4
+                        Submarkets    [3; 4; 3]
+                    }
+                    {
+                        Name    "Weather Radar"
+                        Level    2
+                        Description    "Overlay radar imagery on navigation maps."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 5; 1]
+                    }
+                ]
+            }
+        ]
+    }

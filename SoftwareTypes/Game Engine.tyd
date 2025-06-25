@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Game Engine"
+        Category    Development
+        Description    "A platform for creating interactive games with advanced physics and graphics."
+        Random    0.2
+        OSSupport    true
+        IdealPrice    200
+        OptimalDevTime    50
+        SubmarketNames    ["Performance"; "Graphics"; "Usability"]
+        NameGenerator    game_engine_names.txt
+        Features    [
+            {
+                Name    Rendering Engine
+                Spec    System
+                Description    "High performance rendering for 2D and 3D games."
+                DevTime    10
+                CodeArt    0.7
+                Submarkets    [5; 4; 1]
+                Features    [
+                    {
+                        Name    "Shader Support"
+                        Level    2
+                        Description    "Allows custom shaders for unique visual effects."
+                        DevTime    6
+                        CodeArt    0.8
+                        Submarkets    [6; 3; 1]
+                    }
+                    {
+                        Name    "Lighting Engine"
+                        Level    1
+                        Description    "Dynamic lighting and shadow rendering."
+                        DevTime    7
+                        CodeArt    0.6
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Physics Engine
+                Spec    System
+                Description    "Accurate physics simulation for game objects."
+                DevTime    9
+                CodeArt    0.7
+                Submarkets    [4; 5; 1]
+                Features    [
+                    {
+                        Name    "Rigid Body"
+                        Level    1
+                        Description    "Simulates collisions and rigid body dynamics."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [4; 5; 1]
+                    }
+                    {
+                        Name    "Soft Body"
+                        Level    2
+                        Description    "Simulates soft body and cloth interactions."
+                        DevTime    8
+                        CodeArt    0.7
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Tools and Editors
+                Spec    User Interface
+                Description    "Graphical tools for designing levels and scripting gameplay."
+                DevTime    8
+                CodeArt    0.5
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Visual Scripting"
+                        Level    1
+                        Description    "Node-based scripting for rapid prototyping."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [3; 4; 3]
+                    }
+                    {
+                        Name    "Asset Pipeline"
+                        Level    2
+                        Description    "Automated import and management of assets."
+                        DevTime    6
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+        ]
+    }

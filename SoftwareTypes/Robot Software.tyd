@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Robot Software"
+        Category    Utility
+        Description    "Software to control and automate robotic hardware."
+        Random    0.25
+        OSSupport    true
+        IdealPrice    300
+        OptimalDevTime    45
+        SubmarketNames    ["Control"; "Sensors"; "Usability"]
+        NameGenerator    robot_software_names.txt
+        Features    [
+            {
+                Name    Motion Control
+                Spec    System
+                Description    "Precise movement and path planning for robots."
+                DevTime    9
+                CodeArt    0.7
+                Submarkets    [5; 4; 1]
+                Features    [
+                    {
+                        Name    "Inverse Kinematics"
+                        Level    2
+                        Description    "Calculate joint positions for end effector control."
+                        DevTime    7
+                        CodeArt    0.8
+                        Submarkets    [6; 3; 1]
+                    }
+                    {
+                        Name    "Trajectory Planning"
+                        Level    1
+                        Description    "Generate smooth movement paths."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Sensor Integration
+                Spec    System
+                Description    "Interfaces for cameras, lidar, and other sensors."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [4; 5; 1]
+                Features    [
+                    {
+                        Name    "Sensor Calibration"
+                        Level    1
+                        Description    "Tools for calibrating sensors and removing noise."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [4; 5; 1]
+                    }
+                    {
+                        Name    "Sensor Fusion"
+                        Level    2
+                        Description    "Combine data from multiple sensors for accurate perception."
+                        DevTime    7
+                        CodeArt    0.7
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Programming Interface
+                Spec    User Interface
+                Description    "Graphical and script-based programming options."
+                DevTime    6
+                CodeArt    0.5
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Visual Programming"
+                        Level    1
+                        Description    "Drag-and-drop interface for beginners."
+                        DevTime    4
+                        CodeArt    0.4
+                        Submarkets    [3; 3; 4]
+                    }
+                    {
+                        Name    "Script Editor"
+                        Level    2
+                        Description    "Advanced scripting for complex behaviors."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+        ]
+    }

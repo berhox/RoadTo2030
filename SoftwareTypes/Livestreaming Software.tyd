@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Livestreaming Software"
+        Category    Multimedia
+        Description    "Broadcast gameplay or presentations live to an online audience."
+        Random    0.25
+        OSSupport    true
+        IdealPrice    80
+        OptimalDevTime    28
+        SubmarketNames    ["Performance"; "Stability"; "User Experience"]
+        NameGenerator    livestreaming_names.txt
+        Features    [
+            {
+                Name    Capture Engine
+                Spec    System
+                Description    "Captures high-resolution video and audio with minimal impact on performance."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [5; 3; 2]
+                Features    [
+                    {
+                        Name    "Game Capture"
+                        Level    1
+                        Description    "Optimized capturing for fullscreen games."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [5; 3; 2]
+                    }
+                    {
+                        Name    "Window Capture"
+                        Level    1
+                        Description    "Capture specific application windows."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+            {
+                Name    Streaming Tools
+                Spec    Network
+                Description    "Built-in integration with popular streaming platforms."
+                DevTime    6
+                CodeArt    0.6
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "Chat Overlay"
+                        Level    1
+                        Description    "Display chat messages over the stream."
+                        DevTime    4
+                        CodeArt    0.4
+                        Submarkets    [3; 4; 3]
+                    }
+                    {
+                        Name    "Alerts System"
+                        Level    2
+                        Description    "Custom alerts for followers and donations."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 5; 1]
+                    }
+                ]
+            }
+            {
+                Name    Recording Options
+                Spec    System
+                Description    "Record high-quality footage while streaming."
+                DevTime    5
+                CodeArt    0.5
+                Submarkets    [4; 3; 3]
+                Features    [
+                    {
+                        Name    "Local Recording"
+                        Level    1
+                        Description    "Save recordings directly to disk."
+                        DevTime    3
+                        CodeArt    0.4
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Replay Buffer"
+                        Level    2
+                        Description    "Capture the last moments of gameplay for highlights."
+                        DevTime    4
+                        CodeArt    0.6
+                        Submarkets    [5; 3; 2]
+                    }
+                ]
+            }
+        ]
+    }
