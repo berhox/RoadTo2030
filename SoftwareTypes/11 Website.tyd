@@ -1,0 +1,96 @@
+SoftwareType
+	{
+	Name			"Website"
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Unlock			1990
+	Features
+		[
+			{
+			Name		"Static pages"
+			Spec		2D
+			DevTime		1
+			CodeArt		0
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Icons"
+					DevTime		1
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Page layout"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Page styling"
+					DevTime		3
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Custom font"
+					DevTime		3
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Dynamic pages"
+			Spec		System
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"User accounts"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Message board"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Store"
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Back end application"
+			Spec		Network
+			Optional	True
+			DevTime		3
+			CodeArt		1
+			Unlock		1985
+			Submarkets	[ 1; 1; 1 ]
+			}
+		]
+	}

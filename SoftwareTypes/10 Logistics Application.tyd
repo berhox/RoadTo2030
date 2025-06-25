@@ -1,0 +1,98 @@
+SoftwareType
+	{
+	Name			"Logistics Application"
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Features
+		[
+			{
+			Name		"Command line"
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	0
+			Features
+				[
+					{
+					Name		"Third-party integration"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Payment processing"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Business optimization algoritms"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	0
+					}
+				]
+			}
+			{
+			Name		"User interface"
+			Spec		2D
+			Optional	True
+			DevTime		2
+			CodeArt		0.5
+			Submarkets	0
+			Features
+				[
+					{
+					Name		"Pretty icons"
+					DevTime		2
+					Level		1
+					CodeArt		0
+					Submarkets	0
+					}
+				]
+			}
+			{
+			Name		"Database management"
+			Spec		Network
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	0
+			Unlock		1985
+			Features
+				[
+					{
+					Name		"Product database"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Inventory management"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Employee management"
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					}
+				]
+			}
+		]
+	}

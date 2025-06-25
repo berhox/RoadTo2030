@@ -1,0 +1,305 @@
+SoftwareType
+	{
+	Name			"Office Software"
+	Description		"For all your officing needs"
+	Random			0.2
+	Popularity		0.7
+	Retention		12
+	IdealPrice		100
+	OptimalDevTime	35
+	SubmarketNames	[ "Word processing"; "Spreadsheets"; "Presentation" ]
+	Iterative		1
+	NameGenerator	Office
+	OSSupport		Computer
+	InHouse			False
+	Features
+		[
+			{
+			Name			Interface
+			Spec			2D
+			Description 	"Can't make office documents if you can't see them"
+			DevTime			5
+			CodeArt			0.75
+			Dependencies	"2D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Equation rendering"
+					Description "y=(1/(σ·sqrt(2·π)))e^(-(x-μ)^2/(2·σ^2))... Doesn't look good, does it?"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 1 ]
+					}
+					{
+					Name		"Auto page layout"
+					Description "I.e. spending 30 minutes trying to make the picture fit in the place"
+					DevTime		3
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Charts and graphs"
+					DevTime		3
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 1; 4; 1 ]
+					}
+					{
+					Name		"Clipart"
+					Description "*Stick figure pointing at chart*"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 3 ]
+					}
+					{
+					Name		"Animations"
+					Description "Just slides and text gliding in from every which way and angle"
+					DevTime		3
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Slide templates"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Vector graphics"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 3 ]
+					}
+					{
+					Name		"Virtual assistant"
+					Description "Helps bug reports slowly resolve on their own"
+					DevTime		4
+					Level		3
+					CodeArt		0
+					Submarkets	0
+					RunType		Local #This is the default RunType, since this accesses the player's work items, it needs to be run locally for player
+					Script_EndOfDay
+"var supportWork = PlayerCompany.WorkItems.FindFirst(x is SupportWork && x.TargetProduct == Product);//Find support work for product
+if (supportWork != null)
+	{
+	var remove = Floor(supportWork.Tickets.Count * 0.25 / DaysPerMonth);//Calculate the amount of support tickets to remove
+	if (remove > 0)
+		{
+		supportWork.Tickets.RemoveRange(0, remove);//Remove tickets in FIFO fashion
+		}
+	}"
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			Optional	True
+			Description ""
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Spellcheck"
+					Description "Make anyone seem even more competent"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Interactive slides"
+					Description "At this point you might as well make a website"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Dictionary"
+					Description "Make anyone seem competent"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Thesaurus"
+					Description "Make anyone seem more competent"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Financial math library"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Geometric math library"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Date manipulation"
+					Description "What is today minus 10. June 2014? You're looking at it"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Scripting"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Optional	True
+			Description ""
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Cloud backup"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Database connections"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name			"Audio playback"
+			Spec			Audio
+			Optional		True
+			Dependencies	"Audio Tool"
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 0; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Sound effect library"
+					Description "Bring some much unneeded excitement to your presentations!"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+		]
+	AddOns
+		[
+			{
+			Name 			"Content Pack"
+			OptimalDevTime 	4
+			Retention 		6
+			IdealPrice		20
+			NameGenerator	"ContentPack"
+			Features
+				[
+					{
+					Name	"Clipart"
+					Spec	"2D"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					MaxFactor	4
+					AmountScript	"(x * 25) + ' ' + Localize('PressPicture')"
+					Submarkets	[ 1; 0; 1 ]
+					DependsOn	"Clipart"
+					}
+					{
+					Name	"Sound effects"
+					Spec	"Audio"
+					Description	"Someone's going to enjoy this presentation and it ain't me"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					Submarkets	[ 0; 0; 1 ]
+					DependsOn	"Audio playback"
+					}
+					{
+					Name	"Math library"
+					Spec	"System"
+					DevTime	0.5
+					Level	2
+					CodeArt	1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name	"Fonts"
+					Spec	"2D"
+					Description	"<b><color=#FF0000>Papyrus</color></b>"
+					DevTime	1
+					Level	2
+					CodeArt	0
+					Submarkets	[ 3; 1; 3 ]
+					}
+					{
+					Name	"Slide templates"
+					Spec	"2D"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					Submarkets	[ 0; 0; 1 ]
+					MaxFactor	4
+					AmountScript	"(x * 10) + ' ' + Localize('Templates')"
+					DependsOn	"Slide templates"
+					}
+					{
+					Name	"Document templates"
+					Spec	"2D"
+					DevTime	0.75
+					Level	1
+					CodeArt	0
+					Submarkets	[ 1; 0; 0 ]
+					MaxFactor	4
+					AmountScript	"(x * 10) + ' ' + Localize('Templates')"
+					DependsOn	"Auto page layout"
+					}
+					{
+					Name	"Charts"
+					Spec	"2D"
+					Description	"Nesting a treemap into this timeline chart would honestly save the annual report"
+					DevTime	1
+					Level	2
+					CodeArt	0.8
+					Submarkets	[ 0; 1; 0 ]
+					DependsOn	"Charts and graphs"
+					}
+				]
+			}
+		]
+	}

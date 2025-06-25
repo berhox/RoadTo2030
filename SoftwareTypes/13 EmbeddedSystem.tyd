@@ -1,0 +1,168 @@
+SoftwareType
+	{
+	Name			"Embedded System"
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Hardware		True
+	Manufacturing
+		{
+		Components
+			[
+				{
+				Name 				Thermostat
+				BuiltInThumbnail	Thermostat
+				Price				5
+				Time				4
+				DependsOn			"Thermostat"
+				}
+				{
+				Name 				Camera
+				BuiltInThumbnail	Camera
+				Price				10
+				Time				8
+				DependsOn			"Camera"
+				}
+				{
+				Name 				Speaker
+				BuiltInThumbnail	Speaker
+				Price				5
+				Time				8
+				DependsOn			"Speaker"
+				}
+				{
+				Name 				Motor
+				BuiltInThumbnail	Vibration
+				Price				5
+				Time				8
+				DependsOn			"Motor"
+				}
+				{
+				Name 				Display
+				BuiltInThumbnail	LCD
+				Price				20
+				Time				16
+				DependsOn			"Display"
+				}
+				{
+				Name 				GPS
+				BuiltInThumbnail	Microchip
+				Price				20
+				Time				16
+				DependsOn			"GPS"
+				}
+				{
+				Name 				USB
+				BuiltInThumbnail	USB
+				Price				15
+				Time				8
+				DependsOn			"Hardware interface"
+				}
+				{
+				Name 				Board
+				BuiltInThumbnail	PCB
+				Price				5
+				Time				4
+				}
+				{
+				Name 				Case
+				BuiltInThumbnail	PlasticCase
+				Price				5
+				Time				4
+				}
+			]
+		Processes
+			[
+				{
+				Inputs	[ "GPS"; "Speaker"; "Thermostat" ]
+				Output	Board
+				}
+				{
+				Inputs	[ "Motor"; "Camera"; "Display"; "USB" ]
+				Output	Case
+				}
+				{
+				Inputs	[ "Board"; "Case" ]
+				Output	Final
+				}
+			]
+		FinalTime	4
+		}
+	Features
+		[
+			{
+			Name		"Clock"
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	0
+			Features
+				[
+					{
+					Name		"Thermostat"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Camera"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Speaker"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Motor"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Display"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"GPS"
+					DevTime		4
+					Unlock		1990
+					Level		2
+					CodeArt		1
+					Submarkets	0
+					}
+					{
+					Name		"Hardware interface"
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					}
+				]
+			}
+			{
+			Name		"User interface"
+			Spec		2D
+			Optional	True
+			DevTime		3
+			CodeArt		0.75
+			Submarkets	0
+			}
+		]
+	}
