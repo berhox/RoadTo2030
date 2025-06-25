@@ -3,7 +3,7 @@ SoftwareType
         Name    "Media Player"
         Description    "A versatile and powerful media player designed to play various audio and video formats, ensuring an immersive entertainment experience."
         Random    0.3
-        OsSupport    true
+        OSSupport    true
         Popularity    0.8
         Retention    36
         IdealPrice    40
