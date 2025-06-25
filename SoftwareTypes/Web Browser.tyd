@@ -21,7 +21,7 @@ SoftwareType
 			Retention		36
 			TimeScale		1
 			Iterative		0.6
-			NameGenerator		browsergen
+			NameGenerator           web_browser_names.txt
 			}
 		]
 	Features
