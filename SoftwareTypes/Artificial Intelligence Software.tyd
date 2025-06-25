@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Artificial Intelligence Software"
+        Category    Development
+        Description    "Frameworks and tools to build intelligent systems and automate tasks."
+        Random    0.3
+        OSSupport    true
+        IdealPrice    250
+        OptimalDevTime    48
+        SubmarketNames    ["Algorithms"; "Performance"; "Usability"]
+        NameGenerator    ai_software_names.txt
+        Features    [
+            {
+                Name    Machine Learning Libraries
+                Spec    System
+                Description    "Prebuilt algorithms for classification and prediction."
+                DevTime    9
+                CodeArt    0.7
+                Submarkets    [5; 4; 1]
+                Features    [
+                    {
+                        Name    "Neural Network Toolkit"
+                        Level    2
+                        Description    "Modules for building and training neural networks."
+                        DevTime    7
+                        CodeArt    0.8
+                        Submarkets    [6; 3; 1]
+                    }
+                    {
+                        Name    "Data Preprocessing"
+                        Level    1
+                        Description    "Tools for cleaning and preparing data."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 4; 2]
+                    }
+                ]
+            }
+            {
+                Name    Automation Tools
+                Spec    System
+                Description    "APIs for integrating AI into existing applications."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "Scripting Interface"
+                        Level    1
+                        Description    "Run custom scripts to control AI features."
+                        DevTime    5
+                        CodeArt    0.5
+                        Submarkets    [3; 4; 3]
+                    }
+                    {
+                        Name    "Model Deployment"
+                        Level    2
+                        Description    "Deploy trained models to production systems."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [5; 3; 2]
+                    }
+                ]
+            }
+            {
+                Name    Visualization Suite
+                Spec    User Interface
+                Description    "Graphical tools for analyzing and presenting AI results."
+                DevTime    7
+                CodeArt    0.5
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Model Insights"
+                        Level    2
+                        Description    "Interactive charts to explore model behavior."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Dashboard Builder"
+                        Level    1
+                        Description    "Create custom dashboards for AI metrics."
+                        DevTime    5
+                        CodeArt    0.5
+                        Submarkets    [3; 3; 4]
+                    }
+                ]
+            }
+        ]
+    }

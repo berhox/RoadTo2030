@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Cloud Storage Tool"
+        Category    Internet
+        Description    "Service for storing and syncing files across devices."
+        Random    0.3
+        OSSupport    true
+        IdealPrice    60
+        OptimalDevTime    30
+        SubmarketNames    ["Reliability"; "Security"; "Usability"]
+        NameGenerator    cloud_storage_names.txt
+        Features    [
+            {
+                Name    Sync Engine
+                Spec    Network
+                Description    "Reliable background synchronization of files."
+                DevTime    7
+                CodeArt    0.6
+                Submarkets    [5; 3; 2]
+                Features    [
+                    {
+                        Name    "Selective Sync"
+                        Level    1
+                        Description    "Choose specific folders to sync."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Delta Uploads"
+                        Level    2
+                        Description    "Only upload the changed parts of files."
+                        DevTime    5
+                        CodeArt    0.7
+                        Submarkets    [5; 3; 2]
+                    }
+                ]
+            }
+            {
+                Name    Security Features
+                Spec    Security
+                Description    "Protect user data with encryption and access controls."
+                DevTime    6
+                CodeArt    0.6
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "End-to-End Encryption"
+                        Level    2
+                        Description    "Encrypt files before they leave the device."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [5; 3; 2]
+                    }
+                    {
+                        Name    "Two-Factor Authentication"
+                        Level    1
+                        Description    "Adds an extra layer of login security."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [4; 4; 2]
+                    }
+                ]
+            }
+            {
+                Name    Collaboration Tools
+                Spec    User Interface
+                Description    "Share files and collaborate with others."
+                DevTime    5
+                CodeArt    0.5
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "File Sharing Links"
+                        Level    1
+                        Description    "Generate shareable download links."
+                        DevTime    2
+                        CodeArt    0.4
+                        Submarkets    [3; 3; 4]
+                    }
+                    {
+                        Name    "Real-Time Collaboration"
+                        Level    2
+                        Description    "Edit documents simultaneously with others."
+                        DevTime    4
+                        CodeArt    0.6
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+        ]
+    }

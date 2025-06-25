@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Mapping Application"
+        Category    Utility
+        Description    "Navigation tool with detailed maps and route planning."
+        Random    0.3
+        OSSupport    true
+        IdealPrice    25
+        OptimalDevTime    20
+        SubmarketNames    ["Coverage"; "Accuracy"; "Usability"]
+        NameGenerator    mapping_app_names.txt
+        Features    [
+            {
+                Name    Map Data
+                Spec    Data
+                Description    "High resolution maps with regular updates."
+                DevTime    7
+                CodeArt    0.5
+                Submarkets    [5; 3; 2]
+                Features    [
+                    {
+                        Name    "Offline Maps"
+                        Level    1
+                        Description    "Download regions for offline navigation."
+                        DevTime    4
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Traffic Information"
+                        Level    2
+                        Description    "Real-time traffic and incident reporting."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Routing Engine
+                Spec    System
+                Description    "Calculates optimal routes for driving, biking, or walking."
+                DevTime    6
+                CodeArt    0.6
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "Multi-stop Planning"
+                        Level    1
+                        Description    "Add multiple destinations to a single trip."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Public Transit Routes"
+                        Level    2
+                        Description    "Includes bus and train schedules in route suggestions."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [5; 3; 2]
+                    }
+                ]
+            }
+            {
+                Name    Points of Interest
+                Spec    User Interface
+                Description    "Discover restaurants, attractions, and services nearby."
+                DevTime    5
+                CodeArt    0.4
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Reviews and Ratings"
+                        Level    1
+                        Description    "User reviews help choose the best places."
+                        DevTime    3
+                        CodeArt    0.3
+                        Submarkets    [3; 3; 4]
+                    }
+                    {
+                        Name    "Favorites"
+                        Level    2
+                        Description    "Save frequently visited locations for quick access."
+                        DevTime    2
+                        CodeArt    0.3
+                        Submarkets    [2; 3; 5]
+                    }
+                ]
+            }
+        ]
+    }

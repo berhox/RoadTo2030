@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Communication Application"
+        Category    Internet
+        Description    "Messaging and video chat platform for teams and friends."
+        Random    0.3
+        OSSupport    true
+        IdealPrice    50
+        OptimalDevTime    24
+        SubmarketNames    ["Reliability"; "Security"; "User Experience"]
+        NameGenerator    communication_app_names.txt
+        Features    [
+            {
+                Name    Text Chat
+                Spec    Network
+                Description    "Real-time text messaging with emoji and file sharing."
+                DevTime    5
+                CodeArt    0.5
+                Submarkets    [3; 4; 3]
+                Features    [
+                    {
+                        Name    "Group Chats"
+                        Level    1
+                        Description    "Create persistent group conversations."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [3; 4; 3]
+                    }
+                    {
+                        Name    "Message Search"
+                        Level    1
+                        Description    "Quickly search conversation history."
+                        DevTime    4
+                        CodeArt    0.4
+                        Submarkets    [2; 4; 4]
+                    }
+                ]
+            }
+            {
+                Name    Voice and Video Calls
+                Spec    Network
+                Description    "High-quality calls with screen sharing."
+                DevTime    7
+                CodeArt    0.6
+                Submarkets    [4; 4; 2]
+                Features    [
+                    {
+                        Name    "Screen Sharing"
+                        Level    1
+                        Description    "Share your desktop in real time."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 4; 2]
+                    }
+                    {
+                        Name    "Background Blur"
+                        Level    2
+                        Description    "Blur the background during video calls for privacy."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [4; 5; 1]
+                    }
+                ]
+            }
+            {
+                Name    Notification System
+                Spec    User Interface
+                Description    "Customizable alerts for messages and calls."
+                DevTime    4
+                CodeArt    0.4
+                Submarkets    [3; 3; 4]
+                Features    [
+                    {
+                        Name    "Do Not Disturb"
+                        Level    1
+                        Description    "Temporarily mute notifications."
+                        DevTime    2
+                        CodeArt    0.3
+                        Submarkets    [2; 3; 5]
+                    }
+                    {
+                        Name    "Notification Scheduling"
+                        Level    2
+                        Description    "Set quiet hours to reduce distractions."
+                        DevTime    3
+                        CodeArt    0.4
+                        Submarkets    [2; 3; 5]
+                    }
+                ]
+            }
+        ]
+    }

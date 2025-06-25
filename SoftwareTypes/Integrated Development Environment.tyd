@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Integrated Development Environment"
+        Category    Development
+        Description    "A complete environment with tools and editors for efficient software development."
+        Random    0.25
+        OSSupport    true
+        IdealPrice    150
+        OptimalDevTime    42
+        SubmarketNames    ["Performance"; "Extensions"; "Usability"]
+        NameGenerator    ide_names.txt
+        Features    [
+            {
+                Name    Code Editor
+                Spec    System
+                Description    "Powerful editor with syntax highlighting and auto-completion."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [4; 3; 3]
+                Features    [
+                    {
+                        Name    "Refactoring Tools"
+                        Level    2
+                        Description    "Automated tools for code refactoring and cleanup."
+                        DevTime    5
+                        CodeArt    0.7
+                        Submarkets    [4; 4; 2]
+                    }
+                    {
+                        Name    "Version Control Integration"
+                        Level    1
+                        Description    "Built-in support for popular version control systems."
+                        DevTime    4
+                        CodeArt    0.6
+                        Submarkets    [3; 4; 3]
+                    }
+                ]
+            }
+            {
+                Name    Debugger
+                Spec    System
+                Description    "Integrated debugger with breakpoints and variable inspection."
+                DevTime    7
+                CodeArt    0.7
+                Submarkets    [4; 3; 3]
+                Features    [
+                    {
+                        Name    "Memory Profiler"
+                        Level    1
+                        Description    "Analyzes application memory usage."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 3; 3]
+                    }
+                    {
+                        Name    "Remote Debugging"
+                        Level    2
+                        Description    "Debug applications running on remote environments."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [4; 4; 2]
+                    }
+                ]
+            }
+            {
+                Name    Extension System
+                Spec    User Interface
+                Description    "Allows developers to extend the IDE with plugins."
+                DevTime    6
+                CodeArt    0.5
+                Submarkets    [3; 4; 3]
+                Features    [
+                    {
+                        Name    "Marketplace"
+                        Level    1
+                        Description    "Central repository for discovering and installing extensions."
+                        DevTime    5
+                        CodeArt    0.5
+                        Submarkets    [3; 4; 3]
+                    }
+                    {
+                        Name    "Scripting API"
+                        Level    2
+                        Description    "API for automating and customizing IDE behaviors."
+                        DevTime    6
+                        CodeArt    0.6
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+        ]
+    }

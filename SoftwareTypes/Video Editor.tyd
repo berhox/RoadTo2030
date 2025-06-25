@@ -1,0 +1,92 @@
+SoftwareType
+    {
+        Name    "Video Editor"
+        Category    Multimedia
+        Description    "A comprehensive suite for editing and producing professional-quality videos."
+        Random    0.3
+        OSSupport    true
+        IdealPrice    120
+        OptimalDevTime    40
+        SubmarketNames    ["Performance"; "Effects"; "User Interface"]
+        NameGenerator    video_editor_names.txt
+        Features    [
+            {
+                Name    Timeline Editing
+                Spec    User Interface
+                Description    "Non-linear editing with a multi-track timeline."
+                DevTime    8
+                CodeArt    0.6
+                Submarkets    [5; 3; 2]
+                Features    [
+                    {
+                        Name    "Keyframe Animation"
+                        Level    2
+                        Description    "Animate properties over time with precision keyframes."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [5; 2; 3]
+                    }
+                    {
+                        Name    "Multi-track Support"
+                        Level    1
+                        Description    "Edit multiple video and audio tracks simultaneously."
+                        DevTime    4
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+            {
+                Name    Visual Effects
+                Spec    Video
+                Description    "Built-in library of effects and color tools."
+                DevTime    7
+                CodeArt    0.7
+                Submarkets    [4; 5; 1]
+                Features    [
+                    {
+                        Name    "Color Grading"
+                        Level    2
+                        Description    "Advanced color correction and grading workspace."
+                        DevTime    5
+                        CodeArt    0.6
+                        Submarkets    [4; 5; 1]
+                    }
+                    {
+                        Name    "Chroma Key"
+                        Level    1
+                        Description    "Remove backgrounds using green screen technology."
+                        DevTime    6
+                        CodeArt    0.7
+                        Submarkets    [5; 4; 1]
+                    }
+                ]
+            }
+            {
+                Name    Export Options
+                Spec    System
+                Description    "Render videos in numerous formats and resolutions."
+                DevTime    5
+                CodeArt    0.4
+                Submarkets    [3; 2; 5]
+                Features    [
+                    {
+                        Name    "GPU Acceleration"
+                        Level    2
+                        Description    "Use GPU hardware to speed up rendering."
+                        DevTime    4
+                        CodeArt    0.7
+                        Submarkets    [5; 3; 2]
+                    }
+                    {
+                        Name    "Preset Templates"
+                        Level    1
+                        Description    "Ready-made export profiles for popular platforms."
+                        DevTime    3
+                        CodeArt    0.5
+                        Submarkets    [4; 3; 3]
+                    }
+                ]
+            }
+        ]
+    }
